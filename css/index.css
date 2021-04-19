@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-image: url("/assets/img/masterhead.png");
+  background-position: 35%;
+  background-size: cover;
+  min-height: 50vh;
+  position: relative;
+}
+
+.logo__take {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  width: 10%;
+  height: auto;
+}
+
+.heading__block {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.heading__block .heading__title, .heading__block .heading__paragraph {
+  color: #fff;
+  font-weight: normal;
+  font-size: 2.1rem;
+}
+
+.heading__block .heading__paragraph {
+  display: none;
+}
+
+.iphone__image {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 40%;
+  height: auto;
+}
+
+.text--vertical {
+  position: absolute;
+  top: 10%;
+  left: 1%;
+  height: 9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 531px) {
+  .iphone__image {
+    top: 50%;
+  }
+  .logo__take {
+    width: 10%;
+  }
+}
+
+@media (min-width: 681px) {
+  .iphone__image {
+    top: 35%;
+  }
+  .logo__take {
+    width: 5%;
+  }
+}
+
+@media (min-width: 761px) {
+  .iphone__image {
+    width: 45%;
+    height: auto;
+    top: 30%;
+  }
+}
+
+.sectionOne__title {
+  margin-top: 4rem;
+  margin-left: 1%;
+}
+
+.sectionOne__paragraph {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sectionOne__paragraph .paragraph__start, .sectionOne__paragraph .paragraph__start--wide {
+  margin: 0.5em;
+  line-height: 1.5em;
+}
+
+@media (min-width: 761px) {
+  .paragraph__start {
+    width: 45%;
+  }
+  .paragraph__start--wide {
+    width: 100%;
+    padding-right: 50%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,39 @@
+.sectionOne__title{
+  margin-top: 4rem;
+  margin-left: 1%;
+}
+.sectionOne__paragraph{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .paragraph__start, .paragraph__start--wide{
+    margin: 0.5em;
+    line-height: 1.5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 761px){
+  .paragraph__start{
+    width: 45%;
+  }
+  .paragraph__start--wide{
+    width: 100%;
+    padding-right: 50%;
+  }
+}
+
+
+
+
+  

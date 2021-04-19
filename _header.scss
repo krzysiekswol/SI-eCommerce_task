@@ -1,0 +1,75 @@
+header{
+  background-image: url('/assets/img/masterhead.png');
+  background-position: 35%;
+  background-size: cover;
+  min-height: 50vh;
+  position: relative;
+}
+
+.logo__take{
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  width: 10%;
+  height: auto;
+}
+.heading__block{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  .heading__title{
+    color: #fff;
+    font-weight: normal;
+    font-size: 2.1rem;
+  }
+  .heading__paragraph{
+    @extend .heading__title;
+    display: none;
+  }
+}
+
+.iphone__image{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 40%;
+  height: auto;
+  
+  
+}
+.text--vertical{
+  position: absolute;
+  top: 10%;
+  left: 1%;
+  height: 9em;
+  // disply:flex;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  
+}
+
+@media (min-width: 531px){
+  .iphone__image{
+    top: 50%;
+  }
+  .logo__take{
+    width: 10%;
+  }
+}
+@media (min-width: 681px){
+  .iphone__image{
+    top: 35%;
+  }
+  .logo__take{
+    width: 5%;
+  }
+}
+@media (min-width: 761px){
+  .iphone__image{
+    width: 45%;
+    height: auto;
+    top: 30%;
+  }
+}
