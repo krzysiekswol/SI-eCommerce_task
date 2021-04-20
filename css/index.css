@@ -400,6 +400,16 @@ header {
   border-radius: 5px;
 }
 
+.buying .buying__container .buying__boxes .buying__icons, .buying .buying__container .buying__boxes--shadow .buying__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buying .buying__container .buying__boxes .buying__icons .icon__element, .buying .buying__container .buying__boxes--shadow .buying__icons .icon__element {
+  padding-right: 1em;
+}
+
 .buying .buying__container .buying__boxes--shadow {
   -webkit-box-shadow: 0 0 10px #aaa;
           box-shadow: 0 0 10px #aaa;
@@ -418,5 +428,67 @@ header {
 .footer {
   background-color: #192431;
   color: #fff;
+  padding: 2rem;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__container .footer__box, .footer__container .footer__box--column {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__container .footer__box .footer_box__title, .footer__container .footer__box--column .footer_box__title {
+  margin-bottom: 1em;
+}
+
+.footer__container .footer__box .footer_box__text, .footer__container .footer__box--column .footer_box__text {
+  font-size: 0.75em;
+}
+
+.footer__container .footer__box .input__text, .footer__container .footer__box--column .input__text {
+  margin-top: 0.5em;
+  font-size: 0.75em;
+}
+
+.footer__container .footer__box .input, .footer__container .footer__box--column .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer__container .footer__box .input .input__element, .footer__container .footer__box--column .input .input__element {
+  width: 70%;
+  padding: 0.75em;
+  border: none;
+}
+
+.footer__container .footer__box .input .input__send, .footer__container .footer__box--column .input .input__send {
+  width: 20%;
+  border: none;
+  padding: 0.75em;
+  background-color: #82ca9c;
 }
 /*# sourceMappingURL=index.css.map */
