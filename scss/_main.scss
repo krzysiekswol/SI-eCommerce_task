@@ -2,16 +2,25 @@
 .sectionOne__title{
   margin-top: 3rem;
   font-weight: 300;
+  text-align: left;
+  margin-left: 0.25em;
+}
+.sectionOne__title--center{
+  margin-top: 3rem;
+  font-weight: 300;
   text-align: center;
 }
+
 .sectionOne__paragraph{
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   .paragraph__start, .paragraph__start--wide{
     margin: 0.5em;
     line-height: 1.5em;
+    
   }
 }
 // Boxes 
@@ -81,7 +90,7 @@
   justify-content: space-evenly;
 }
 .column__item{
-  padding: 1.5rem;
+  padding: 0.5rem;
   .column__title{
     font-weight: bold;
     margin-bottom: 1em;
@@ -230,7 +239,9 @@
 
 
 
+@media (min-width: 531px){
 
+}
 
 
 

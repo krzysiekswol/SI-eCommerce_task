@@ -4,11 +4,11 @@
   padding: 2rem;
 }
 .footer__container{
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   .footer__box{
-    flex-basis: 40%;
+    flex-basis: 50%;
     margin: 1em;
     // display: flex;
     display: flex;
@@ -43,5 +43,23 @@
   }
   .footer__box--column{
     @extend .footer__box;
+    .site__map{
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .site__map_title{
+        margin: 1em 0;
+        width: 100%;
+      }
+      .site__map_link{
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.8em;
+        text-align: left;
+        margin-bottom: 1em;
+      }
+    }
   }
+  
 }

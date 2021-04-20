@@ -1,0 +1,38 @@
+// Mobile
+@media (min-width: 761px){
+  .container{
+    max-width: 1280px;
+  }
+  .iphone__image{
+    left:50%;
+    top:30%;
+  }
+  .paragraph__start, .paragraph__start--wide{
+    font-size: 0.8em;
+    line-height: 2em;
+  }
+  .boxes{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .box__element{
+      width: 50%;
+      padding: 0;
+    }
+    .box__element:nth-child(5){
+      width:100%;
+    }
+  }
+}
+  
+
+
+
+
+// Medium screen
+
+@media(min-width: 1281px){
+
+}
+
+// Desktop screen;

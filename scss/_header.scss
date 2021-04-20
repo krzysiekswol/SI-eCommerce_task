@@ -32,7 +32,7 @@ header{
 .iphone__image{
   position: absolute;
   top: 65%;
-  left: 50%;
+  left: 55%;
   width: 40%;
   height: auto;
   
@@ -50,26 +50,3 @@ header{
   
 }
 
-@media (min-width: 531px){
-  .iphone__image{
-    top: 50%;
-  }
-  .logo__take{
-    width: 10%;
-  }
-}
-@media (min-width: 681px){
-  .iphone__image{
-    top: 35%;
-  }
-  .logo__take{
-    width: 5%;
-  }
-}
-@media (min-width: 761px){
-  .iphone__image{
-    width: 45%;
-    height: auto;
-    top: 30%;
-  }
-}
