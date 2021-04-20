@@ -109,9 +109,10 @@ header {
   }
 }
 
-.sectionOne__title {
-  margin-top: 4rem;
-  margin-left: 1%;
+.sectionOne__title, .green .green__title {
+  margin-top: 3rem;
+  font-weight: 300;
+  text-align: center;
 }
 
 .sectionOne__paragraph {
@@ -144,15 +145,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  outline: 2px solid orange;
 }
 
 .boxes .box__element {
   color: #fff;
   height: auto;
-  padding: 3em;
+  padding: 1em;
   background-repeat: no-repeat;
-  margin: 0.5rem 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,6 +242,169 @@ header {
   line-height: 1.5em;
 }
 
+.text--horizontal {
+  background-color: black;
+}
+
+.text--horizontal .img__horizontal {
+  display: block;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: 0 auto;
+}
+
+.banner {
+  background-image: url("/assets/img/Layer8.png");
+  height: 70vh;
+  background-position: top right;
+  background-size: cover;
+}
+
+.banner .banner__item {
+  position: relative;
+  top: 40%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner__item .banner__text, .banner .banner__item .banner__title, .banner .banner__item .banner__link {
+  width: 90%;
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8em;
+  padding-right: 2em;
+  margin: 0.5em auto;
+}
+
+.banner .banner__item .banner__title {
+  font-size: 2.5rem;
+  padding: 0;
+}
+
+.banner .banner__item .banner__link {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.banner .banner__item .banner__link .arrow {
+  padding-left: 1em;
+}
+
+.green {
+  padding: 2em 0;
+  background-color: #82ca9c;
+  color: #fff;
+  min-height: 50vh;
+}
+
+.green .green__title {
+  text-align: center;
+  margin-top: 0;
+  padding: 1em;
+}
+
+.green .green__columns {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.green .green__column {
+  height: 30%;
+  width: 90%;
+  padding: 1em;
+}
+
+.green .green__column .column_green__title {
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+.buying {
+  padding: 2rem;
+  background-color: #f6f7fa;
+  min-height: 50vh;
+}
+
+.buying .buying__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buying .buying__container .buying__boxes, .buying .buying__container .buying__boxes--shadow {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.buying .buying__container .buying__boxes .buying__title, .buying .buying__container .buying__boxes--shadow .buying__title, .buying .buying__container .buying__boxes .buying__text, .buying .buying__container .buying__boxes--shadow .buying__text, .buying .buying__container .buying__boxes .buying__button, .buying .buying__container .buying__boxes--shadow .buying__button, .buying .buying__container .buying__boxes .buying__icons, .buying .buying__container .buying__boxes--shadow .buying__icons {
+  margin-top: 1rem;
+}
+
+.buying .buying__container .buying__boxes .buying__text, .buying .buying__container .buying__boxes--shadow .buying__text {
+  font-size: 0.8rem;
+}
+
+.buying .buying__container .buying__boxes .buying__button, .buying .buying__container .buying__boxes--shadow .buying__button {
+  width: 50%;
+  padding: 1em 1.5em;
+  color: #fff;
+  background-color: #82ca9c;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.buying .buying__container .buying__boxes--shadow {
+  -webkit-box-shadow: 0 0 10px #aaa;
+          box-shadow: 0 0 10px #aaa;
+}
+
 @media (min-width: 761px) {
   .paragraph__start {
     width: 45%;
@@ -250,5 +413,10 @@ header {
     width: 100%;
     padding-right: 50%;
   }
+}
+
+.footer {
+  background-color: #192431;
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */
