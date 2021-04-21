@@ -27,10 +27,9 @@
       display: flex;
       justify-content: flex-start;
       .input__element{
-        width: 70%;
+        width: 80%;
         padding: 0.75em;
         border: none;
-        
       }
       .input__send{
         width: 20%;
@@ -44,15 +43,16 @@
   .footer__box--column{
     @extend .footer__box;
     .site__map{
-      flex-basis: 100%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: flex-start;
       flex-wrap: wrap;
       .site__map_title{
         margin: 1em 0;
         width: 100%;
       }
       .site__map_link{
+        width: 40%;
         text-decoration: none;
         color: #fff;
         font-size: 0.8em;
