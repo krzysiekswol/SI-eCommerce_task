@@ -366,11 +366,17 @@ header {
 
 .buying {
   background-color: #f6f7fa;
-  min-height: 70vh;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .buying .buying__container {
-  margin: 0 auto;
+  margin: 1rem auto;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,9 +396,7 @@ header {
 }
 
 .buying .buying__container .buying__boxes, .buying .buying__container .buying__boxes--shadow {
-  margin: 1em 0 0.5em;
   padding: 1em;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,7 +411,7 @@ header {
 
 .buying .buying__container .buying__boxes .buying__title, .buying .buying__container .buying__boxes--shadow .buying__title, .buying .buying__container .buying__boxes .buying__text, .buying .buying__container .buying__boxes--shadow .buying__text, .buying .buying__container .buying__boxes .buying__button, .buying .buying__container .buying__boxes--shadow .buying__button, .buying .buying__container .buying__boxes .buying__icons, .buying .buying__container .buying__boxes--shadow .buying__icons {
   margin-top: 1rem;
-  width: 80%;
+  width: 90%;
 }
 
 .buying .buying__container .buying__boxes .buying__text, .buying .buying__container .buying__boxes--shadow .buying__text {
@@ -456,8 +460,7 @@ header {
 }
 
 .footer__container .footer__box, .footer__container .footer__box--column {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  width: 50%;
   margin: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -629,7 +632,8 @@ header {
   .green .green__columns .green__column {
     width: 30%;
   }
-  .buying__boxes, .buying .buying__container .buying__boxes--shadow, .buying__boxes--shadow {
+  .buying__boxes, .buying .buying__container .buying__boxes--shadow,
+  .buying__boxes--shadow {
     width: 60%;
   }
   .footer__container {
@@ -702,6 +706,57 @@ header {
   }
   .banner .banner__item .banner__title {
     font-size: 3rem;
+  }
+  .green {
+    margin: auto;
+  }
+  .green .green__title {
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+  }
+  .green .green__columns {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .green .green__columns .green__column {
+    width: 50%;
+  }
+  .buying .buying__container {
+    width: 80%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .buying .buying__container .buying__boxes, .buying .buying__container .buying__boxes--shadow,
+  .buying .buying__container .buying__boxes--shadow {
+    width: 45%;
+  }
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__container .footer__box, .footer__container .footer__box--column {
+    width: 50%;
+  }
+  .footer__container .footer__box--column {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -203,9 +203,11 @@
 // Buying section
 .buying{
   background-color: #f6f7fa;
-  min-height: 70vh;
+  height: 80vh;
+  display: flex;
+  align-items: center;
   .buying__container{
-    margin: 0 auto;
+    margin: 1rem auto;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -213,15 +215,13 @@
     align-items: center;
     flex-wrap: wrap;
     .buying__boxes{
-      margin: 1em 0 0.5em;
       padding: 1em;
-      background-color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       .buying__title, .buying__text, .buying__button, .buying__icons{
         margin-top: 1rem;
-        width: 80%;
+        width: 90%;
       }
       .buying__text{
         font-size: 0.8rem;
