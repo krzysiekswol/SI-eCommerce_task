@@ -1,0 +1,183 @@
+@media (min-width: 761px){
+  .container{
+    max-width: 1000px;
+  }
+  .iphone__image{
+    left:50%;
+    top:30%;
+  }
+  .logo__take{
+    left: 15%;
+  }
+  .heading__block{
+    left: 15%;
+    .heading__paragraph{
+      display: block;
+      font-size: 0.8em;
+      width: 40%;
+      margin-top: 0.5em;
+      color: #fff;
+    }
+  }
+  .text--vertical{
+    left:5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .sectionOne__item{
+    width: 80%;
+    margin: 3rem auto;
+    .sectionOne__paragraph{
+      .paragraph__start{
+        width: 45%;
+        font-size: 1em;
+      }
+      .paragraph__start--wide{
+        padding-right: 50%;
+        font-size: 1em;
+      }
+    }
+  }
+  
+  .boxes{
+    width: 80%;
+    margin: 1rem auto;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    .box__element{
+      width: 50%;
+      height: 250px;
+      .box__title{
+        font-size: 1.5rem;
+      }
+    }
+    .box__element:nth-child(5){
+      width:100%;
+    }
+  }
+  .text__column{
+    flex-direction: row;
+    flex-wrap:wrap;
+    .column__item{
+      width: 50%;
+    }
+  }
+  // text--horizontal ;
+
+  .banner__item{
+    top: 50%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .green{
+    .green__title{
+      width: 80%;
+      padding: 1rem;
+      margin: 0 auto;
+      
+    }
+    .green__columns{
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      
+      
+      .green__column{
+        width: 30%;
+      }
+    }  
+  }
+  
+  .buying__boxes, .buying__boxes--shadow{
+      width: 60%;  
+  }
+  .footer__container{
+    width: 80%;
+    margin: 0 auto;
+    .footer__box{
+      width: 80%;
+      margin: 1em auto;
+    }
+  }
+
+}
+  
+
+
+
+
+// Desktop screen
+
+@media(min-width: 1281px){
+  .container{
+    max-width: 1500px;
+  }
+  .iphone__image{
+    left:50%;
+    top:10%;
+  }
+  .heading__block{
+    .heading__title{
+      font-size: 4rem;
+    }
+    .heading__paragraph{
+      font-size: 1em;
+    }
+  }
+  .sectionOne__item{
+    margin: 3rem auto;
+  }
+  .sectionOne__title{
+    font-size: 2rem;
+  }
+  .boxes{
+    width: 90%;
+    margin: 1rem 0 0 10%;
+    .box__element{
+      width: 25%;
+      padding: 2rem;
+      justify-content: space-around;
+    }
+    .box__element:nth-child(5){
+      width: 50%;   
+    }
+  }
+  .text__column{
+    flex-direction: row;
+    flex-wrap:wrap;
+    .column__item{
+      width: 25%;
+      .column__paragraph{
+        font-size: 0.8em;
+      }
+    }
+  }
+  .banner{
+    .banner__item{
+      top: 35%;
+      left: 5%;
+      align-items: flex-start;
+      .banner__text{
+        width: 50%;
+        margin: 0.5em 0;
+      }
+      .banner__title{
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+
+
+
+// Desktop large
+
+
+
+
+
+  

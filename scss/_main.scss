@@ -1,9 +1,16 @@
-
+.sectionOne__item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .sectionOne__title{
+  width: 100%;
   margin-top: 3rem;
   font-weight: 300;
   text-align: left;
-  margin-left: 0.25em;
+  margin-left: 0.5rem;  
 }
 .sectionOne__title--center{
   margin-top: 3rem;
@@ -32,27 +39,32 @@
   
   .box__element{
     color: #fff;
-    height: auto;
-    padding: 1em;
+    // height: auto;
+    padding: 1em 2em;
     background-repeat: no-repeat;
     margin: 0;
     // display - flex;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
     .box__paragraph{
-      padding: 0.9rem;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
+      line-height: 1.4rem;
+      height: 50%;
     }
     .box__title{
-      @extend .box__paragraph;
       font-size: 2rem;
+      font-weight: 300;
+      height: 25%;
     }
     .box__link{
-      @extend .box__paragraph;
       text-decoration: none;
       color: white;
+      font-size: 0.8rem;
+      font-weight: bold;
+      height: 25%;
+      padding: 1em 0;
       .arrow{
         margin-left: 1em;
       }
@@ -67,7 +79,7 @@
   .box__element:nth-child(3){
     background-image: url('/assets/img/layer6.png');
     background-size: cover;
-    background-position: center;
+    background-position: 0 0;
   }
   .box__element:nth-child(4){
     background-color: #BD8CBF;
@@ -88,6 +100,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: 1rem 0;
 }
 .column__item{
   padding: 0.5rem;
@@ -100,21 +113,21 @@
   }
 }
 
-// Horizontal text Takeapp
-.text--horizontal{
-  background-color: black;
-  .img__horizontal{
-    display: block;
-    transform: rotate(90deg);
-    margin: 0 auto;
-  }
-}
+// // Horizontal text Takeapp
+// .text--horizontal{
+//   background-color: black;
+//   .img__horizontal{
+//     display: block;
+//     transform: rotate(90deg);
+//     margin: 0 auto;
+//   }
+// }
 
 // Section Banner
 .banner{
   background-image: url('/assets/img/Layer8.png');
-  height: 70vh;
-  background-position: top right;
+  height: 80vh;
+  background-position: center;
   background-size: cover;
   .banner__item{
     position: relative;
@@ -122,7 +135,7 @@
     height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     .banner__text{
       width: 90%;
@@ -130,12 +143,14 @@
       font-weight: 300;
       font-size: 0.8em;
       padding-right: 2em;
-      margin: 0.5em auto; 
+      margin: 0.5rem auto;
+      line-height: 1.6em; 
     }
     .banner__title{
       @extend .banner__text;
       font-size: 2.5rem;
       padding: 0;
+      line-height: 1em;
     }
     .banner__link{
       @extend .banner__text;
@@ -158,17 +173,17 @@
   color: #fff;
   min-height: 50vh;
   .green__title{
-    // @extend .sectionOne__title;
-    text-align: center;
-    margin-top: 0;
-    padding: 0.5em;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    padding: 1rem;
   }
   .green__columns{
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     .green__column{
       width: 90%;
       padding: 1em;
@@ -242,24 +257,3 @@
 
 
 
-@media (min-width: 531px){
-
-}
-
-
-
-
-@media (min-width: 761px){
-  .paragraph__start{
-    width: 45%;
-  }
-  .paragraph__start--wide{
-    width: 100%;
-    padding-right: 50%;
-  }
-}
-
-
-
-
-  
