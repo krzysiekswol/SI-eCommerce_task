@@ -30,11 +30,11 @@
     .sectionOne__paragraph {
       .paragraph__start {
         width: 45%;
-        font-size: 1em;
+        font-size: 0.8rem;
       }
       .paragraph__start--wide {
         padding-right: 50%;
-        font-size: 1em;
+        font-size: 0.8rem;
       }
     }
   }
@@ -56,6 +56,9 @@
       height: 250px;
       .box__title {
         font-size: 1.5rem;
+      }
+      .box__paragraph, .box__link{
+        font-size: 0.8rem;
       }
     }
     .box__element:nth-child(5) {
@@ -84,6 +87,7 @@
       width: 80%;
       padding: 1rem;
       margin: 0 auto;
+      font-weight: 300;
     }
     .green__columns {
       width: 80%;
@@ -147,7 +151,7 @@
   }
   .sectionOne{
     .sectionOne__text--absolute{
-      top: 86%;
+      top: 85%;
       display: block;
     }
   }

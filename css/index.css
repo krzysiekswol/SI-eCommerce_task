@@ -16,6 +16,12 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/assets/fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -277,7 +283,7 @@ header {
 }
 
 .column__item .column__title {
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 1em;
   color: #615F7D;
 }
@@ -341,15 +347,15 @@ header {
 
 .green {
   position: relative;
-  padding: 2em 0;
+  padding-top: 2em;
   background-color: #82ca9c;
   color: #fff;
-  min-height: 50vh;
+  min-height: 40vh;
 }
 
 .green .green__text--absolute {
   position: absolute;
-  top: 21%;
+  top: 28%;
   text-transform: uppercase;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -387,13 +393,14 @@ header {
 }
 
 .green .green__columns .green__column .column_green__title {
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 1em;
   font-size: 1rem;
 }
 
 .green .green__columns .green__column .column_green__text {
   line-height: 1.5em;
+  font-size: 0.8rem;
 }
 
 .buying {
@@ -474,10 +481,12 @@ header {
 
 .buying .buying__container .buying__boxes .buying__title, .buying .buying__container .buying__boxes--shadow .buying__title {
   font-size: 1.5rem;
+  color: #615F7D;
 }
 
 .buying .buying__container .buying__boxes .buying__text, .buying .buying__container .buying__boxes--shadow .buying__text {
   font-size: 0.8rem;
+  color: #959595;
 }
 
 .buying .buying__container .buying__boxes .buying__button, .buying .buying__container .buying__boxes--shadow .buying__button {
@@ -487,6 +496,7 @@ header {
   background-color: #82ca9c;
   border: 1px solid #fff;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .buying .buying__container .buying__boxes .buying__icons, .buying .buying__container .buying__boxes--shadow .buying__icons {
@@ -500,8 +510,8 @@ header {
 }
 
 .buying .buying__container .buying__boxes--shadow {
-  -webkit-box-shadow: 0 0 10px #aaa;
-          box-shadow: 0 0 10px #aaa;
+  -webkit-box-shadow: 0 0 20px #aaa;
+          box-shadow: 0 0 20px #aaa;
 }
 
 .footer {
@@ -535,6 +545,7 @@ header {
 
 .footer__container .footer__box .footer_box__title, .footer__container .footer__box--column .footer_box__title {
   margin-bottom: 1em;
+  font-weight: 600;
 }
 
 .footer__container .footer__box .footer_box__text, .footer__container .footer__box--column .footer_box__text {
@@ -561,6 +572,10 @@ header {
   min-width: 200px;
   padding: 0.75em;
   border: none;
+}
+
+.footer__container .footer__box .input .input__element:focus, .footer__container .footer__box--column .input .input__element:focus {
+  outline: none;
 }
 
 .footer__container .footer__box .input .input__send, .footer__container .footer__box--column .input .input__send {
@@ -594,6 +609,7 @@ header {
 .footer__container .footer__box--column .site__map .site__map_title {
   margin: 1em 0;
   width: 100%;
+  font-weight: 600;
 }
 
 .footer__container .footer__box--column .site__map .site__map_link {
@@ -638,11 +654,11 @@ header {
   }
   .sectionOne__item .sectionOne__paragraph .paragraph__start {
     width: 45%;
-    font-size: 1em;
+    font-size: 0.8rem;
   }
   .sectionOne__item .sectionOne__paragraph .paragraph__start--wide {
     padding-right: 50%;
-    font-size: 1em;
+    font-size: 0.8rem;
   }
   .sectionOne .sectionOne__text--absolute {
     top: 84%;
@@ -667,6 +683,9 @@ header {
   }
   .boxes .box__element .box__title {
     font-size: 1.5rem;
+  }
+  .boxes .box__element .box__paragraph, .boxes .box__element .box__link {
+    font-size: 0.8rem;
   }
   .boxes .box__element:nth-child(5) {
     width: 100%;
@@ -694,6 +713,7 @@ header {
     width: 80%;
     padding: 1rem;
     margin: 0 auto;
+    font-weight: 300;
   }
   .green .green__columns {
     width: 80%;
@@ -751,7 +771,7 @@ header {
     font-size: 2rem;
   }
   .sectionOne .sectionOne__text--absolute {
-    top: 86%;
+    top: 85%;
     display: block;
   }
   .boxes {
