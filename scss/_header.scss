@@ -7,17 +7,13 @@ header {
 }
 
 .logo__take {
-  position: absolute;
-  top: 2%;
-  left: 5%;
+  @include absolute (2%, 5%);
   width: 10%;
   max-width: 60px;
   height: auto;
 }
 .heading__block {
-  position: absolute;
-  top: 50%;
-  left: 5%;
+  @include absolute (50%, 5%);
   transform: translateY(-50%);
   .heading__title {
     color: $font-color-base;
@@ -30,18 +26,14 @@ header {
 }
 
 .iphone__image {
-  position: absolute;
-  top: 65%;
-  left: 55%;
+  @include absolute (65%, 55%);
   width: 40%;
   min-width: 150px;
   max-width: 450px;
   height: auto;
 }
 .text--vertical {
-  position: absolute;
-  top: 10%;
-  left: 1%;
+  @include absolute (10%, 2%);
   height: 9em;
   // disply:flex;
   @include flex (column-reverse, space-between);

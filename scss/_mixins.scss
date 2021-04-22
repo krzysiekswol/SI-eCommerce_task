@@ -5,3 +5,9 @@
   flex-direction: $direction;
   justify-content: $justifyContent;
 }
+
+@mixin absolute ($top, $left: 0){
+  position: absolute;
+  top: $top;
+  left: $left;
+}

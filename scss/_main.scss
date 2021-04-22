@@ -27,8 +27,7 @@
 .sectionOne {
   position: relative;
   .sectionOne__text--absolute {
-    position: absolute;
-    top: 86%;
+    @include absolute (86%);
     text-transform: uppercase;
     transform: rotate(-90deg);
     color: #b8b8b8;
@@ -74,8 +73,7 @@
           transform: translateY(-50%);
         }
         .fa-heart {
-          position: absolute;
-          left: 90%;
+          @include absolute (0, 90%);
         }
       }
     }
@@ -175,8 +173,7 @@
   color: $font-color-base;
   min-height: 40vh;
   .green__text--absolute {
-    position: absolute;
-    top: 28%;
+    @include absolute (28%);
     text-transform: uppercase;
     transform: rotate(-90deg);
     color: $font-color-base;
