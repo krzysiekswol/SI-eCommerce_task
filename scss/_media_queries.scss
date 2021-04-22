@@ -13,10 +13,10 @@
     left: 15%;
     .heading__paragraph {
       display: block;
-      font-size: 0.8em;
+      font-size: $font-size-small;
       width: 40%;
       margin-top: 0.5em;
-      color: #fff;
+      color: $font-color-base;
     }
   }
   .text--vertical {
@@ -30,16 +30,16 @@
     .sectionOne__paragraph {
       .paragraph__start {
         width: 45%;
-        font-size: 0.8rem;
+        font-size: $font-size-small;
       }
       .paragraph__start--wide {
         padding-right: 50%;
-        font-size: 0.8rem;
+        font-size: $font-size-small;
       }
     }
   }
-  .sectionOne{
-    .sectionOne__text--absolute{
+  .sectionOne {
+    .sectionOne__text--absolute {
       top: 84%;
       display: block;
     }
@@ -55,10 +55,11 @@
       width: 50%;
       height: 250px;
       .box__title {
-        font-size: 1.5rem;
+        font-size: $font-size-medium;
       }
-      .box__paragraph, .box__link{
-        font-size: 0.8rem;
+      .box__paragraph,
+      .box__link {
+        font-size: $font-size-small;
       }
     }
     .box__element:nth-child(5) {
@@ -80,38 +81,36 @@
     margin: 0 auto;
   }
   .green {
-    .green__text--absolute{
+    .green__text--absolute {
       display: block;
     }
     .green__title {
       width: 80%;
       padding: 1rem;
       margin: 0 auto;
-      font-weight: 300;
+      font-weight: $font-light;
     }
     .green__columns {
       width: 80%;
       margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-
+      @include flex(row, flex-start);
       .green__column {
         width: 30%;
       }
     }
   }
-  .buying{
-    .buying__text--absolute{
+  .buying {
+    .buying__text--absolute {
       display: block;
     }
   }
   .buying__boxes,
   .buying__boxes--shadow {
     width: 40%;
-    min-height: 300px;
+    min-height: $font-lightpx;
   }
-  .buying__boxes{
-    .buying__banner--color{
+  .buying__boxes {
+    .buying__banner--color {
       width: 50%;
     }
   }
@@ -149,8 +148,8 @@
   .sectionOne__title {
     font-size: 2rem;
   }
-  .sectionOne{
-    .sectionOne__text--absolute{
+  .sectionOne {
+    .sectionOne__text--absolute {
       top: 85%;
       display: block;
     }
@@ -165,7 +164,7 @@
       width: 25%;
       height: 250px;
       .box__title {
-        font-size: 1.5rem;
+        font-size: $font-size-medium;
       }
     }
     .box__element:nth-child(5) {
@@ -178,7 +177,7 @@
     .column__item {
       width: 25%;
       .column__paragraph {
-        font-size: 0.8em;
+        font-size: $font-size-small;
       }
     }
   }
@@ -206,9 +205,7 @@
     .green__columns {
       width: 80%;
       margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      @include flex(row, space-between);
       .green__column {
         width: 50%;
       }
@@ -222,27 +219,27 @@
       .buying__boxes--shadow {
         width: 45%;
       }
-      .buying__boxes{
-        .buying__banner--color{
+      .buying__boxes {
+        .buying__banner--color {
           width: 25%;
         }
       }
     }
   }
-  .footer__container{
+  .footer__container {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    .footer__box{
+    .footer__box {
       width: 50%;
     }
-    .footer__box--column{
+    .footer__box--column {
       margin: 0;
       flex-direction: row;
-      .site__map{
+      .site__map {
         width: 33%;
         flex-direction: column;
-        .site__map_link{
+        .site__map_link {
           width: 100%;
           margin-bottom: 0.5em;
         }
@@ -250,4 +247,3 @@
     }
   }
 }
-

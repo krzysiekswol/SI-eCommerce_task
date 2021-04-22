@@ -1,78 +1,71 @@
-.footer{
-  background-color:#192431;
-  color: #fff;
+.footer {
+  background-color: #192431;
+  color: $font-color-base;
   padding: 2rem;
 }
-.footer__container{
+.footer__container {
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  .footer__box{
+  @include flex (column, flex-start);
+  .footer__box {
     width: 50%;
     margin: 1em;
     // display: flex;
-    display: flex;
-    flex-direction: column;
-    .footer_box__title{
+    @include flex (column, flex-start);
+    .footer_box__title {
       margin-bottom: 1em;
-      font-weight: 600;
+      font-weight: $font-semibold;
     }
-    .footer_box__text{
+    .footer_box__text {
       font-size: 0.75em;
     }
-    .input__text{
+    .input__text {
       margin-top: 0.5em;
       font-size: 0.75em;
       color: #b8b8b8;
     }
-    .input{
-      display: flex;
-      justify-content: flex-start;
-      .input__element{
+    .input {
+      @include flex (row, flex-start);
+      .input__element {
         width: 80%;
         min-width: 200px;
         padding: 0.75em;
         border: none;
-        &:focus{
+        &:focus {
           outline: none;
         }
       }
-      .input__send{
+      .input__send {
         width: 10%;
         min-width: 50px;
         border: none;
         // padding: 0.75em;
-        background-color:#82ca9c;
-        & svg{
+        background-color: $color-green;
+        & svg {
           width: 50%;
           height: 50%;
           margin: 0 auto;
         }
       }
-    } 
-        
+    }
   }
-  .footer__box--column{
+  .footer__box--column {
     @extend .footer__box;
-    .site__map{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    .site__map {
+      @include flex (row, space-between);
       flex-wrap: wrap;
-      .site__map_title{
+      .site__map_title {
         margin: 1em 0;
         width: 100%;
-        font-weight: 600;
+        font-weight: $font-semibold;
       }
-      .site__map_link{
+      .site__map_link {
         width: 40%;
         text-decoration: none;
-        color: #fff;
-        font-size: 0.8em;
+        color: $font-color-base;
+        font-size: $font-size-small;
         text-align: left;
         margin-bottom: 1em;
       }
     }
   }
-  
 }

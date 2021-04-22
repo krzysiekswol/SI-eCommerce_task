@@ -1,39 +1,34 @@
-
-.sectionOne__item{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.sectionOne__item {
+  @include flex(row, center);
   align-items: center;
   flex-wrap: wrap;
 }
-.sectionOne__title{
+.sectionOne__title {
   width: 100%;
   margin-top: 3rem;
-  font-weight: 300;
+  font-weight: $font-light;
   text-align: left;
-  margin-left: 0.5rem; 
-  color: #615F7D; 
+  margin-left: 0.5rem;
+  color: $font-color-dark;
 }
 
-
-.sectionOne__paragraph{
+.sectionOne__paragraph {
   margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
+  @include flex(row, space-between);
   align-items: flex-start;
   flex-wrap: wrap;
-  color:#959595;
-  .paragraph__start, .paragraph__start--wide{
+  color: $font-color-medium;
+  .paragraph__start,
+  .paragraph__start--wide {
     margin: 0.5em;
     line-height: 2em;
   }
-
 }
-.sectionOne{
+.sectionOne {
   position: relative;
-  .sectionOne__text--absolute{
+  .sectionOne__text--absolute {
     position: absolute;
-    top:86%;
+    top: 86%;
     text-transform: uppercase;
     transform: rotate(-90deg);
     color: #b8b8b8;
@@ -41,274 +36,250 @@
   }
 }
 
-// Boxes 
-.boxes{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+// Boxes
+.boxes {
+  @include flex(column, space-around);
   align-items: center;
-  .box__element{
+  .box__element {
     max-width: 100%;
     min-height: 278px;
-    color: #fff;
+    color: $font-color-base;
     background-repeat: no-repeat;
     margin: 0;
     position: relative;
-    .box-element__text{
+    .box-element__text {
       position: relative;
-      left:10%;
+      left: 10%;
       margin-top: 2rem;
       width: 80%;
       height: 70%;
-      .box__paragraph{
-        margin: 1.5rem 0;
+      .box__paragraph {
+        margin: $font-size-medium 0;
         line-height: 1.4rem;
-        font-weight: 300;
-        min-height: 50%;  
+        font-weight: $font-light;
+        min-height: 50%;
       }
-      .box__title{
-        font-size: 1.5rem;
-        font-weight: 600;
+      .box__title {
+        font-size: $font-size-medium;
+        font-weight: $font-semibold;
       }
-      .box__link{
+      .box__link {
         padding-right: 4rem;
         text-decoration: none;
         color: white;
-        font-weight: bold;
+        font-weight: $font-bold;
         padding: 1em 0;
-        .arrow{
-        margin-left: 1em;
-        transform: translateY(-50%);
+        .arrow {
+          margin-left: 1em;
+          transform: translateY(-50%);
         }
-        .fa-heart{
+        .fa-heart {
           position: absolute;
           left: 90%;
-        }  
+        }
       }
     }
-    
   }
-  .box__element:nth-child(1){
+  .box__element:nth-child(1) {
     background-color: #f5989d;
   }
-  .box__element:nth-child(2){
-    background-color: #615F7D;
+  .box__element:nth-child(2) {
+    background-color: $font-color-dark;
   }
-  .box__element:nth-child(3){
-    background-image: url('/assets/img/box1.png');
+  .box__element:nth-child(3) {
+    background-image: url("/assets/img/box1.png");
     background-size: cover;
     background-position: 0 0;
   }
-  .box__element:nth-child(4){
-    background-color: #BD8CBF;
+  .box__element:nth-child(4) {
+    background-color: #bd8cbf;
   }
-  .box__element:nth-child(5){
-    background-image: url('/assets/img/Layer5.png');
+  .box__element:nth-child(5) {
+    background-image: url("/assets/img/Layer5.png");
   }
-  .box__element:nth-child(6){
-    background-color: #82ca9c;
+  .box__element:nth-child(6) {
+    background-color: $color-green;
   }
-  .box__element:nth-child(7){
-    background-image: url('/assets/img/Clip.png');
+  .box__element:nth-child(7) {
+    background-image: url("/assets/img/Clip.png");
   }
 }
 
 // Column txt
-.sectionOne__title--center{
+.sectionOne__title--center {
   margin-top: 3rem;
-  font-weight: 300;
+  font-weight: $font-light;
   text-align: center;
 }
-.text__column{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+.text__column {
+  @include flex(column, space-evenly);
   margin: 1rem 0;
 }
-.column__item{
+.column__item {
   padding: 0.5rem;
-  .column__title{
-    font-weight: 600;
+  .column__title {
+    font-weight: $font-semibold;
     margin-bottom: 1em;
-    color: #615F7D;
+    color: $font-color-dark;
   }
-  .column__paragraph{
-    line-height: 1.5em;
-    color:#959595;
+  .column__paragraph {
+    line-height: $line-height-standard;
+    color: $font-color-medium;
   }
 }
 
-
 // Section Banner
-.banner{
-  background-image: url('/assets/img/Layer8.png');
+.banner {
+  background-image: url("/assets/img/Layer8.png");
   height: 80vh;
   background-position: center;
   background-size: cover;
-  .banner__item{
+  .banner__item {
     position: relative;
     top: 40%;
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column, center);
     align-items: center;
-    .banner__text{
+    .banner__text {
       width: 90%;
-      color: #fff;
-      font-weight: 300;
-      font-size: 0.8em;
+      color: $font-color-base;
+      font-weight: $font-light;
+      font-size: $font-size-small;
       padding-right: 2em;
       margin: 0.5rem auto;
-      line-height: 1.6em; 
+      line-height: $line-height-standard;
     }
-    .banner__title{
+    .banner__title {
       @extend .banner__text;
       font-size: 2.5rem;
       padding: 0;
       line-height: 1em;
     }
-    .banner__link{
+    .banner__link {
       @extend .banner__text;
-      font-weight: bold;
+      font-weight: $font-bold;
       text-decoration: none;
       font-size: 0.9em;
-      .arrow{
+      .arrow {
         padding-left: 1em;
       }
     }
-
-
   }
 }
 
 // Section green
-.green{
+.green {
   position: relative;
   padding-top: 2em;
-  background-color: #82ca9c;
-  color: #fff;
+  background-color: $color-green;
+  color: $font-color-base;
   min-height: 40vh;
-  .green__text--absolute{
+  .green__text--absolute {
     position: absolute;
     top: 28%;
     text-transform: uppercase;
     transform: rotate(-90deg);
-    color: #fff;
+    color: $font-color-base;
     display: none;
   }
-  .green__title{
+  .green__title {
     width: 100%;
     text-align: left;
     margin: 0 auto;
     padding: 1rem;
   }
-  .green__columns{
+  .green__columns {
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    @include flex(column, flex-start);
     align-items: flex-start;
-    .green__column{
+    .green__column {
       width: 90%;
       padding: 1em;
-      .column_green__title{
-        font-weight: 600;
+      .column_green__title {
+        font-weight: $font-semibold;
         margin-bottom: 1em;
         font-size: 1rem;
       }
-      .column_green__text{
-        line-height: 1.5em;
-        font-size: 0.8rem;
+      .column_green__text {
+        line-height: $line-height-standard;
+        font-size: $font-size-small;
       }
     }
-  }  
+  }
 }
 
 // Buying section
-.buying{
+.buying {
   background-color: #f6f7fa;
   height: 80vh;
   display: flex;
   align-items: center;
   position: relative;
-  .buying__text--absolute{
+  .buying__text--absolute {
     text-transform: uppercase;
     transform: rotate(-90deg);
     color: #b8b8b8;
     display: none;
   }
-  .buying__container{
+  .buying__container {
     margin: 1rem auto;
     width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flex(row, center);
     align-items: center;
     flex-wrap: wrap;
-    .buying__boxes{
+    .buying__boxes {
       padding: 1em;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      .buying__banner{
+      @include flex(column, space-evenly);
+      .buying__banner {
         text-transform: uppercase;
         background-color: #e1e1e1;
-        color: #fff;
+        color: $font-color-base;
         width: 25%;
         padding: 0.3em;
         font-size: 0.75rem;
         text-align: center;
-        border-radius: 5px;  
+        border-radius: 5px;
       }
-      .buying__banner--color{
+      .buying__banner--color {
         @extend .buying__banner;
         background-color: #bd8cbf;
         width: 50%;
         padding: 0.3em 0.5em;
-        
       }
-      .buying__title, .buying__text, .buying__button, .buying__icons{
+      .buying__title,
+      .buying__text,
+      .buying__button,
+      .buying__icons {
         margin-top: 1rem;
         width: 90%;
       }
-      .buying__title{
-        font-size: 1.5rem;
-        color: #615F7D;
+      .buying__title {
+        font-size: $font-size-medium;
+        color: $font-color-dark;
       }
-      .buying__text{
-        font-size: 0.8rem;
-        color:#959595
+      .buying__text {
+        font-size: $font-size-small;
+        color: $font-color-medium;
       }
-      .buying__button{
+      .buying__button {
         max-width: 200px;
         padding: 1em 1.5em;
-        color: #fff;
-        background-color: #82ca9c;
+        color: $font-color-base;
+        background-color: $color-green;
         border: 1px solid #fff;
         border-radius: 5px;
-        font-weight: bold;
+        font-weight: $font-bold;
       }
-      .buying__icons{
+      .buying__icons {
         display: flex;
-        .icon__element{
-         padding-right: 1em;
-
+        .icon__element {
+          padding-right: 1em;
         }
       }
     }
-    .buying__boxes--shadow{
+    .buying__boxes--shadow {
       @extend .buying__boxes;
       box-shadow: 0 0 20px #aaa;
     }
   }
-
 }
-
-
-
-
-
-
-
-

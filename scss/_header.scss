@@ -1,12 +1,12 @@
-header{
-  background-image: url('/assets/img/masterhead.png');
+header {
+  background-image: url("/assets/img/masterhead.png");
   background-position: 35%;
   background-size: cover;
   min-height: 50vh;
   position: relative;
 }
 
-.logo__take{
+.logo__take {
   position: absolute;
   top: 2%;
   left: 5%;
@@ -14,22 +14,22 @@ header{
   max-width: 60px;
   height: auto;
 }
-.heading__block{
+.heading__block {
   position: absolute;
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
-  .heading__title{
-    color: #fff;
+  .heading__title {
+    color: $font-color-base;
     font-weight: normal;
     font-size: 2.1rem;
   }
-  .heading__paragraph{
+  .heading__paragraph {
     display: none;
   }
 }
 
-.iphone__image{
+.iphone__image {
   position: absolute;
   top: 65%;
   left: 55%;
@@ -37,18 +37,12 @@ header{
   min-width: 150px;
   max-width: 450px;
   height: auto;
-  
-  
 }
-.text--vertical{
+.text--vertical {
   position: absolute;
   top: 10%;
   left: 1%;
   height: 9em;
   // disply:flex;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  
+  @include flex (column-reverse, space-between);
 }
-

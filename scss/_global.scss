@@ -1,39 +1,37 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url('/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 @font-face {
-  font-family: 'Open Sans';
-  src: url('/assets/fonts/OpenSans-Light.ttf') format('truetype');
-  font-weight: 300;
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: $font-light;
 }
 @font-face {
-  font-family: 'Open Sans';
-  src: url('/assets/fonts/OpenSans-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: $font-bold;
 }
 @font-face {
-  font-family: 'Open Sans';
-  src: url('/assets/fonts/OpenSans-SemiBold.ttf') format('truetype');
-  font-weight: 600;
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: $font-semibold;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-
 }
-.container{
+.container {
   max-width: 450px;
   margin: 0 auto;
 }
 
-@media (min-width: 761px){
-  .container{
+@media (min-width: 761px) {
+  .container {
     max-width: 1280px;
-    
   }
 }
