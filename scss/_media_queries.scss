@@ -20,7 +20,7 @@
     }
   }
   .text--vertical {
-    left: 5%;
+    left: 3%;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -38,6 +38,12 @@
       }
     }
   }
+  .sectionOne{
+    .sectionOne__text--absolute{
+      top: 84%;
+      display: block;
+    }
+  }
 
   .boxes {
     width: 80%;
@@ -45,7 +51,6 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-
     .box__element {
       width: 50%;
       height: 250px;
@@ -72,6 +77,9 @@
     margin: 0 auto;
   }
   .green {
+    .green__text--absolute{
+      display: block;
+    }
     .green__title {
       width: 80%;
       padding: 1rem;
@@ -88,10 +96,20 @@
       }
     }
   }
-
+  .buying{
+    .buying__text--absolute{
+      display: block;
+    }
+  }
   .buying__boxes,
   .buying__boxes--shadow {
-    width: 60%;
+    width: 40%;
+    min-height: 300px;
+  }
+  .buying__boxes{
+    .buying__banner--color{
+      width: 40%;
+    }
   }
   .footer__container {
     width: 80%;
@@ -127,13 +145,24 @@
   .sectionOne__title {
     font-size: 2rem;
   }
+  .sectionOne{
+    .sectionOne__text--absolute{
+      top: 86%;
+      display: block;
+    }
+  }
   .boxes {
     width: 90%;
-    margin: 1rem 0 0 10%;
+    margin-left: 10%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     .box__element {
       width: 25%;
-      padding: 2rem;
-      justify-content: space-around;
+      height: 250px;
+      .box__title {
+        font-size: 1.5rem;
+      }
     }
     .box__element:nth-child(5) {
       width: 50%;
@@ -189,6 +218,11 @@
       .buying__boxes--shadow {
         width: 45%;
       }
+      .buying__boxes{
+        .buying__banner--color{
+          width: 30%;
+        }
+      }
     }
   }
   .footer__container{
@@ -197,12 +231,19 @@
     flex-wrap: wrap;
     .footer__box{
       width: 50%;
-    
     }
     .footer__box--column{
       margin: 0;
+      flex-direction: row;
+      .site__map{
+        width: 33%;
+        flex-direction: column;
+        .site__map_link{
+          width: 100%;
+          margin-bottom: 0.5em;
+        }
+      }
     }
   }
 }
 
-// Desktop large

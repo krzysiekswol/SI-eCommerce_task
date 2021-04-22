@@ -121,12 +121,7 @@ header {
   font-weight: 300;
   text-align: left;
   margin-left: 0.5rem;
-}
-
-.sectionOne__title--center {
-  margin-top: 3rem;
-  font-weight: 300;
-  text-align: center;
+  color: #615F7D;
 }
 
 .sectionOne__paragraph {
@@ -142,11 +137,26 @@ header {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  color: #959595;
 }
 
 .sectionOne__paragraph .paragraph__start, .sectionOne__paragraph .paragraph__start--wide {
   margin: 0.5em;
   line-height: 2em;
+}
+
+.sectionOne {
+  position: relative;
+}
+
+.sectionOne .sectionOne__text--absolute {
+  position: absolute;
+  top: 86%;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #b8b8b8;
+  display: none;
 }
 
 .boxes {
@@ -165,47 +175,42 @@ header {
 }
 
 .boxes .box__element {
+  max-width: 100%;
+  min-height: 278px;
   color: #fff;
-  padding: 1em 2em;
   background-repeat: no-repeat;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  position: relative;
 }
 
-.boxes .box__element .box__paragraph {
-  font-size: 0.8rem;
+.boxes .box__element .box-element__text {
+  position: relative;
+  left: 10%;
+  margin-top: 2rem;
+  width: 80%;
+  height: 70%;
+}
+
+.boxes .box__element .box-element__text .box__paragraph {
+  margin: 1.5rem 0;
   line-height: 1.4rem;
-  height: 50%;
-}
-
-.boxes .box__element .box__title {
-  font-size: 2rem;
   font-weight: 300;
-  height: 25%;
+  min-height: 50%;
 }
 
-.boxes .box__element .box__link {
+.boxes .box__element .box-element__text .box__title {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.boxes .box__element .box-element__text .box__link {
   text-decoration: none;
   color: white;
-  font-size: 0.8rem;
   font-weight: bold;
-  height: 25%;
   padding: 1em 0;
 }
 
-.boxes .box__element .box__link .arrow {
+.boxes .box__element .box-element__text .box__link .arrow {
   margin-left: 1em;
 }
 
@@ -218,7 +223,7 @@ header {
 }
 
 .boxes .box__element:nth-child(3) {
-  background-image: url("/assets/img/layer6.png");
+  background-image: url("/assets/img/box1.png");
   background-size: cover;
   background-position: 0 0;
 }
@@ -236,7 +241,13 @@ header {
 }
 
 .boxes .box__element:nth-child(7) {
-  background-image: url("/assets/img/Layer14.png");
+  background-image: url("/assets/img/Clip.png");
+}
+
+.sectionOne__title--center {
+  margin-top: 3rem;
+  font-weight: 300;
+  text-align: center;
 }
 
 .text__column {
@@ -260,10 +271,12 @@ header {
 .column__item .column__title {
   font-weight: bold;
   margin-bottom: 1em;
+  color: #615F7D;
 }
 
 .column__item .column__paragraph {
   line-height: 1.5em;
+  color: #959595;
 }
 
 .banner {
@@ -319,10 +332,21 @@ header {
 }
 
 .green {
+  position: relative;
   padding: 2em 0;
   background-color: #82ca9c;
   color: #fff;
   min-height: 50vh;
+}
+
+.green .green__text--absolute {
+  position: absolute;
+  top: 21%;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #fff;
+  display: none;
 }
 
 .green .green__title {
@@ -373,6 +397,15 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.buying .buying__text--absolute {
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #b8b8b8;
+  display: none;
 }
 
 .buying .buying__container {
@@ -409,9 +442,30 @@ header {
           justify-content: space-evenly;
 }
 
+.buying .buying__container .buying__boxes .buying__banner, .buying .buying__container .buying__boxes--shadow .buying__banner, .buying .buying__container .buying__boxes .buying__banner--color, .buying .buying__container .buying__boxes--shadow .buying__banner--color {
+  text-transform: uppercase;
+  background-color: #e1e1e1;
+  color: #fff;
+  width: 20%;
+  padding: 0.3em 0;
+  font-size: 0.75rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.buying .buying__container .buying__boxes .buying__banner--color, .buying .buying__container .buying__boxes--shadow .buying__banner--color {
+  background-color: #bd8cbf;
+  width: 50%;
+  padding: 0.3em 0.5em;
+}
+
 .buying .buying__container .buying__boxes .buying__title, .buying .buying__container .buying__boxes--shadow .buying__title, .buying .buying__container .buying__boxes .buying__text, .buying .buying__container .buying__boxes--shadow .buying__text, .buying .buying__container .buying__boxes .buying__button, .buying .buying__container .buying__boxes--shadow .buying__button, .buying .buying__container .buying__boxes .buying__icons, .buying .buying__container .buying__boxes--shadow .buying__icons {
   margin-top: 1rem;
   width: 90%;
+}
+
+.buying .buying__container .buying__boxes .buying__title, .buying .buying__container .buying__boxes--shadow .buying__title {
+  font-size: 1.5rem;
 }
 
 .buying .buying__container .buying__boxes .buying__text, .buying .buying__container .buying__boxes--shadow .buying__text {
@@ -482,6 +536,7 @@ header {
 .footer__container .footer__box .input__text, .footer__container .footer__box--column .input__text {
   margin-top: 0.5em;
   font-size: 0.75em;
+  color: #b8b8b8;
 }
 
 .footer__container .footer__box .input, .footer__container .footer__box--column .input {
@@ -495,15 +550,22 @@ header {
 
 .footer__container .footer__box .input .input__element, .footer__container .footer__box--column .input .input__element {
   width: 80%;
+  min-width: 200px;
   padding: 0.75em;
   border: none;
 }
 
 .footer__container .footer__box .input .input__send, .footer__container .footer__box--column .input .input__send {
-  width: 20%;
+  width: 10%;
+  min-width: 50px;
   border: none;
-  padding: 0.75em;
   background-color: #82ca9c;
+}
+
+.footer__container .footer__box .input .input__send svg, .footer__container .footer__box--column .input .input__send svg {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
 }
 
 .footer__container .footer__box--column .site__map {
@@ -557,7 +619,7 @@ header {
     color: #fff;
   }
   .text--vertical {
-    left: 5%;
+    left: 3%;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -573,6 +635,10 @@ header {
   .sectionOne__item .sectionOne__paragraph .paragraph__start--wide {
     padding-right: 50%;
     font-size: 1em;
+  }
+  .sectionOne .sectionOne__text--absolute {
+    top: 84%;
+    display: block;
   }
   .boxes {
     width: 80%;
@@ -613,6 +679,9 @@ header {
     width: 80%;
     margin: 0 auto;
   }
+  .green .green__text--absolute {
+    display: block;
+  }
   .green .green__title {
     width: 80%;
     padding: 1rem;
@@ -632,9 +701,16 @@ header {
   .green .green__columns .green__column {
     width: 30%;
   }
+  .buying .buying__text--absolute {
+    display: block;
+  }
   .buying__boxes, .buying .buying__container .buying__boxes--shadow,
   .buying__boxes--shadow {
-    width: 60%;
+    width: 40%;
+    min-height: 300px;
+  }
+  .buying__boxes .buying__banner--color, .buying .buying__container .buying__boxes--shadow .buying__banner--color {
+    width: 40%;
   }
   .footer__container {
     width: 80%;
@@ -666,15 +742,29 @@ header {
   .sectionOne__title {
     font-size: 2rem;
   }
+  .sectionOne .sectionOne__text--absolute {
+    top: 86%;
+    display: block;
+  }
   .boxes {
     width: 90%;
-    margin: 1rem 0 0 10%;
+    margin-left: 10%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .boxes .box__element {
     width: 25%;
-    padding: 2rem;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    height: 250px;
+  }
+  .boxes .box__element .box__title {
+    font-size: 1.5rem;
   }
   .boxes .box__element:nth-child(5) {
     width: 50%;
@@ -741,6 +831,9 @@ header {
   .buying .buying__container .buying__boxes--shadow {
     width: 45%;
   }
+  .buying .buying__container .buying__boxes .buying__banner--color, .buying .buying__container .buying__boxes--shadow .buying__banner--color {
+    width: 30%;
+  }
   .footer__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -757,6 +850,21 @@ header {
   }
   .footer__container .footer__box--column {
     margin: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__container .footer__box--column .site__map {
+    width: 33%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__container .footer__box--column .site__map .site__map_link {
+    width: 100%;
+    margin-bottom: 0.5em;
   }
 }
 /*# sourceMappingURL=index.css.map */
