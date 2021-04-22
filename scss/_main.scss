@@ -71,14 +71,19 @@
         font-weight: 300;
       }
       .box__link{
+        padding-right: 4rem;
         text-decoration: none;
         color: white;
         font-weight: bold;
-      
         padding: 1em 0;
         .arrow{
-          margin-left: 1em;
+        margin-left: 1em;
+        transform: translateY(-50%);
         }
+        .fa-heart{
+          position: absolute;
+          left: 90%;
+        }  
       }
     }
     

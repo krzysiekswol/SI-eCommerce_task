@@ -204,6 +204,7 @@ header {
 }
 
 .boxes .box__element .box-element__text .box__link {
+  padding-right: 4rem;
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -212,6 +213,13 @@ header {
 
 .boxes .box__element .box-element__text .box__link .arrow {
   margin-left: 1em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.boxes .box__element .box-element__text .box__link .fa-heart {
+  position: absolute;
+  left: 90%;
 }
 
 .boxes .box__element:nth-child(1) {
