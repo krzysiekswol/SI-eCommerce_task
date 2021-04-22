@@ -57,7 +57,7 @@
     .site__map{
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: space-between;
       flex-wrap: wrap;
       .site__map_title{
         margin: 1em 0;
